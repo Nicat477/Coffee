@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="data:image/png;base64,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" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                
+            </div>
+            
+            <i class="fa-solid fa-bars"  onclick="hideMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Coffee is a beverage prepared from roasted coffee beans</h1>
+            <p> Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content.<br> It has the highest sales in the world market for hot drinks</p>
+            <a href="index.html" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    <section class="about">
+        <h1>Information About Coffee</h1>
+        
+            <div class="row">
+                <div class="about-col">
+                    <h3>Where do coffee beans come from?</h3>
+                    <p>Coffee beans come from the coffee plant, a bush-like plant which can get very tall (coffee farmers will usually keep them trimmed to around 5ft to keep them manageable). On these coffee plants, bunches of cherries grow and it’s inside these that you’ll find two coffee beans.</p>
+                </div>
+                <div class="about-col">
+                    <h3>Where is coffee grown?</h3>
+                    <p>Most coffee plants are grown around what’s known as ‘the bean belt’, an area around the equator between the tropics of Capricorn and Cancer. It’s here that’s home to the coffee capitals of the world such as Brazil, Vietnam, Colombia, Indonesia and Ethiopia, as these are the locations that coffee’s given the perfect growing conditions to thrive.</p>
+                </div>
+                <div class="about-col">
+                    <h3>Do different plants produce different coffee beans?</h3>
+                    <p>Yes, there’s over 120 varieties of coffee plants and each produces a different type of coffee bean, however the majority of the coffee we consume comes from just two variants, Robusta (also known as Coffea Robusta or Coffea Canephora) or Arabica (Coffea Arabica) or a blend of the two. The two varieties differ in taste, growing conditions, and price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bean-types">
+        <h1>Coffee Beans Types</h1>
+        <div class="row">
+            <div class="types-col">
+                <img src="https://www.nescafe.com/mena/sites/default/files/arabica-coffee-beans-thumbnail-desktop.jpg" alt="">
+                <div class="layer">
+                    <h3>ARABICA</h3>
+                </div>
+            </div>
+            <div class="types-col">
+                <img src="https://www.nescafe.com/mena/sites/default/files/robusta-coffee-beans-thumbnail-desktop.jpg" alt="">
+                <div class="layer">
+                    <h3>ROBUSTA</h3>
+                </div>
+            </div>
+            <div class="types-col">
+                <img src="https://www.nescafe.com/mena/sites/default/files/coffee-cherries-thumbnail-desktop.jpg" >
+                <div class="layer">
+                    <h3>EXCELSA</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="types">
+        <h1>Coffee Types</h1>
+        <div class="row">
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/decaf-coffee-thumbnaiil-desktop.jpg" alt="">
+                <h3>Decaf</h3>
+                <p>Decaf coffee is made from regular coffee beans that go through a process to remove the majority of the caffeine. However, decaffeinated coffee is not completely caffeine free, and EU regulation for decaf coffee is less than 0.3% caffeine.</p>
+            </div>
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/cortado-thumbnail-desktop.jpg" alt="">
+                <h3>Cortado</h3>
+                <p>Unlike other coffee types the milk isn’t texturised and instead, Cortado coffee is made with lightly steamed milk, no froth or foam. The steamed milk on top reduces the acidity of the coffee and creates a micro-foam which doesn’t separate from the espresso, giving it a strong and rich flavour.</p>
+            </div>
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/macchiato-thumbnail-desktop.jpg" alt="">
+                <h3>Macchiato</h3>
+                <p>In Italian, the term "macchiato" translates as "marked" or "stained", meaning a stained or marked coffee. The macchiato is an espresso coffee drink, topped with a small amount of foamed or steamed milk to allow the taste of the espresso to still shine through.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/americano-thumbnail-desktop.jpg" alt="">
+                <h3>Americano</h3>
+                <p>An americano is quite simply just hot water and espresso. It’ll either be served 1/2 and 1/2 or 1/3 espresso to 2/3 water, depending on the coffee shop in question or how you’ve chosen to brew it. There is dispute about whether the espresso or the water should be added first, but in the case of the americano, espresso should always be added first as the crema mixes in and creates a more mellow, even taste. But some people may add it depending on their personal preference. Whilst most other espresso-based coffee drinks include milk, such as the cappuccino or latte, the americano stands out amongst them.</p>
+            </div>
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/mocha-thumbnail-desktop.jpg" alt="">
+                <h3>Mocha</h3>
+                <p>Although a mocha is often interpreted differently across the world, the basis is that a shot of espresso is combined with a chocolate powder or syrup, followed by milk or cream. It is a variant of a latte, in the sense that it is often 1/3 espresso and 2/3 steamed milk. However, a chocolate flavour is added, and this can be milk or dark.</p>
+            </div>
+            <div class="typescol">
+                <img src="https://www.nescafe.com/in/sites/default/files/2022-06/flat-white-thumbnail-desktop.jpg" alt="">
+                <h3>Flat White</h3>
+                <p>A flat white is a blend of micro-foamed milk poured over a single or double shot of espresso. This microfoam is steamed milk infused with air, to create a smooth and velvety texture and creamy taste. Precise pouring and steaming of the microfoam is essential in making a flat white.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <h1>To Get More Information About Coffee</h1>
+        <a href="https://en.wikipedia.org/wiki/Coffee" class="hero-btn">Click Here</a>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Follow us on our social media accounts to get even more tasty content.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa-regular fa-heart"></i> by Rzazada Nicat</p>
+    </section>
+    <script>
+        var navlinks=document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

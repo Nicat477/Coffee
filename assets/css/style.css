@@ -1,0 +1,294 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url("https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=x_378,y_1230,h_1684,w_2246,c_crop");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+nav img{
+    width: 150px;
+    height:110px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li ::after{
+    content: '';
+    height: 2px;
+    width:0%;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{
+    font-size:35px;
+}
+.text-box p{
+    margin:25px 0 40px;
+    color: white;
+    font-size:25px;
+}
+
+.hero-btn{
+    
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    position: relative;
+    border:1px solid white;
+    font-size: 20px;
+    padding:12px 34px;
+    background: transparent;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    background: #f44336;
+    transition: 1s;
+    border: 1px solid #f44336;
+}
+nav .fa-solid{
+    display:none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size:20px;
+    }
+    .nav-links ul li{
+        display:block;
+    }
+    .nav-links{
+        position: absolute;
+        top:0;
+        right:-200px;
+        text-align:left;
+        z-index:2;
+        height:100vh;
+        width:200px;
+        background:#f44336;
+        transition: 1s;
+    }
+    nav.fa{
+        display:block;
+        color:white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+.about{
+    width:80%;
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+}
+.about h1{
+    font-size:40px;
+    font-weight: 600;
+    color: red;
+}
+.about p{
+    font-size:36px;
+    font-weight:300;
+    padding: 10px;
+    line-height: 40px;
+    color:white;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:5%;
+}
+.about-col{
+    flex-basis:31%;
+    background-color: black;
+    margin-bottom: 5%;
+    padding:20px 12px;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+
+.about h3{
+    color:gold;
+    text-align: center;
+    font-weight:600;
+    margin:10px 0;
+    font-size:30px;
+}
+.about-col:hover{
+    box-shadow:0 0 20px 10px rgba(0, 0, 0, 0.671);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+.bean-types{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:50px;
+}
+.types-col{
+    flex-basis:32%;
+    position:relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius:10px;
+}
+.types-col img{
+    width:100%;
+    display: block;
+}
+.bean-types h1{
+    font-size:40px;
+    font-weight: 600;
+    color: red;
+}
+.layer{
+    background:transparent;
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    transition:0.5s;
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    color:gold;
+    bottom:0%;
+    left:50%;
+    transform:translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition: 0.5s;
+    font-size:26px;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+.types{
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.types h1{
+    font-size:40px;
+    font-weight: 600;
+    color: red;
+}
+.typescol{
+    flex-basis:31%;
+    text-align: left;
+    border-radius: 10px;
+    margin-bottom:5%;
+}
+.typescol img{
+    width: 100%;
+    border-radius:10px;
+    
+}
+.typescol img:hover{
+    box-shadow:0 0 20px 10px rgba(0, 0, 0, 0.671);
+}
+.typescol p{
+    padding:0;
+    font-size: 23px;
+}
+.typescol h3{
+    color:gold;
+    font-size:29px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align:left;
+
+}
+.cta{
+    margin:100px auto;
+    width:80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWhsOcF_gPRL-gqq491gyUvGPXUl3CImEWlA&usqp=CAU");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    padding:100px 0;
+    border-radius:10px;
+}
+.cta h1{
+    margin-bottom:40px;
+    padding:0;
+    color:#fff;
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size:24px;
+    }
+}
+.footer{
+    width:100%;
+    text-align:center;
+    padding:30px 0;
+    background-color:black;
+}
+.footer h4{
+    margin-bottom:25px;
+    margin-top:20px;
+    font-weight:600;
+    font-size: 30px;
+    color:#f44336;
+}
+.footer p{
+    font-size:20px;
+    color:#f44336;
+}
+.icons .fa-brands{
+    color:#f44336;
+    padding:18px 0;
+    margin:0 13px;
+    cursor: pointer;
+}
+.fa-regular {
+    color:#f44336;
+}
